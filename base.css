@@ -1,0 +1,224 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #eaeaea; 
+    --yellow-background: #ffd42d;
+    --main-dark-color: #2c2c2c;
+    --gray: #7f7f7f;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin: 5%;
+    background-color: var(--light-gray);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+.surface{
+    background-color: var(--white);
+}
+/************Social media link navigation bar************/
+#social-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+#social-nav a{
+    padding: 5%;
+    text-align: center;
+    background-color: var(--yellow-background);
+    border: 1px solid var(--white);
+
+    position: relative;       
+    overflow: hidden;
+}
+#social-nav a i{
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+#social-nav a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+#social-nav a:hover::before{
+    left: 0;
+}
+#social-nav a:hover i{
+    color: var(--white);
+}
+/************Hero image************/
+#hero-image{
+    width: 100%;
+}
+#hero-image img{
+    width: 100%;
+    height: auto;
+}
+/************Page navigation bar************/
+#primary-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;  
+}
+#primary-nav ul li{
+    width: 20%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+    border: 1px solid var(--white);
+
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+#primary-nav ul li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow-background);
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+#primary-nav ul li:hover::before{
+    left: 0;
+}
+#primary-nav ul li a{ 
+    position: relative;
+    z-index: 1;
+}
+#primary-nav ul li:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+small{
+    display: none;
+}
+.page_active{
+    background-color: var(--yellow-background);
+}
+#page-title{
+    text-align: center;
+}
+/************Main content************/
+#content{
+    padding: 5%;
+    line-height: 1.5;
+}
+#content section{
+    padding: 2%;
+}
+#page-title p{
+    color: var(--gray);
+    font-weight: bold;
+}
+/************Footer************/
+footer{
+    text-align: center;
+}
+#bar-container{
+    height: 40px; /* Adjust the height as needed */
+    position: relative;
+    background-color: var(--light-gray);
+}
+.bar {
+	position: absolute;
+	left: 0%; /* Centering the bars */
+	right: 0%; /* Centering the bars */
+	box-shadow: 0px 0px 5px var(--gray);
+	background-color: var(--yellow-background);
+}
+.one {	
+	bottom: 0; /* Position the first bar at the bottom */
+	height: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.two{
+	height: 10px;
+	bottom: 10px; /* Position the second bar above the red bar */
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+.three{
+	bottom: 20px; /* Position the third bar at the top */
+	height: 20px;
+}
+.bar::before,
+.bar::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 3%;
+	height: 100%;
+	background-color: inherit;
+}
+.bar::before {
+	left: -0%;
+}
+.bar::after {
+	right: -0%;
+}
+@media only screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 19% 76% 5%;
+    }
+    #social-head{
+        grid-column: 3;
+        grid-row: 1 / span 3;
+    }
+    main{
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    footer{
+        grid-column: 2; 
+    }
+    #sidebar{
+        grid-column: 1;
+    }
+    #content{
+        grid-column: 2;
+    }
+
+
+    #social-nav{
+        flex-direction: column;
+    }
+    #social-nav a{        
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    #primary-nav ul {
+        flex-direction: column;
+    }
+    #primary-nav ul li{
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    
+    }
+    small{
+        display: block;
+    }
+}
