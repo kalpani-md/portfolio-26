@@ -112,7 +112,7 @@ a{
 small{
     display: none;
 }
-.page_active{
+.page-active{
     background-color: var(--yellow-background);
 }
 #page-title{

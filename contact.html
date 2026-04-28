@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>index</title>
+    <title>contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Junior Frontend Developer portfolio of Kalpani Madhushika specializing in HTML, CSS, and JavaScript.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">    
 </head>
 <body>
     <!-- Social links -->
@@ -36,8 +36,8 @@
             </div>
             <nav aria-label="Primary" id="primary-nav" class="surface">
                 <ul>
-                    <li class="page-active">
-                        <a href="index.html" aria-current="page">
+                    <li>
+                        <a href="index.html">
                             <i class="fa-solid fa-user" aria-hidden="true"></i>
                             <p>About Me</p>
 					        <small>Who I am</small>
@@ -64,8 +64,8 @@
                             <small>My Thoughts</small>
                         </a>
                     </li>
-                    <li>
-                        <a href="contact.html">
+                    <li class="page-active">
+                        <a href="contact.html" aria-current="page">
                             <i class="fa-solid fa-phone" aria-hidden="true"></i>
                             <p>Contact</p>
                             <small>Say Hello</small>
@@ -78,56 +78,39 @@
         <div id="content" class="surface">
             <!-- Page title -->
             <header id="page-title">
-                <h1>Kalpani Madhushika</h1>
-                <p>Junior Frontend Developer</p>
+                <h1>Contact</h1>
+                <p>Get In Touch</p>
             </header>
-            <!-- About -->
-            <section id="about-me">
-                <h2>About Me</h2>
-                <p>
-                    I build structured, accessible front-end interfaces that are easy to maintain and scale. 
-                    My work focuses on clean architecture, consistent design, and usability across devices.
-                </p>
-                <p>
-                    Currently strengthening JavaScript to create interactive, production-ready user experiences.
-                </p>
+            <!-- Map Location -->
+            <section>
+                <h2>LOCATION</h2>
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19358.98131844528!2d80.16163550291398!3d6.699899384413083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3b439eeed52fb%3A0x9629cadd93e92f9c!2zQm90aGFsZWdhbWEgTWFoYSBWaWR5YWxheWEg4La24Led4Lat4La94Lea4Lac4La4IOC2uOC3hOC3jyDgt4Dgt5Lgtq_gt4rigI3gtrrgt4_gtr3gtro!5e1!3m2!1sen!2slk!4v1777363858861!5m2!1sen!2slk" 
+                    style="border:0; width: 100%; height: 300px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </article>
             </section>
             <!-- Personal Info -->
-            <section id="personal-info">
-                <h2>Personal Information</h2>
-                <dl>
-                    <dt>Name</dt>
-                    <dd>Kalpani Madhushika</dd>
-
-                    <dt>City</dt>
-                    <dd>Horana</dd>
-
-                    <dt>Nationality</dt>
-                    <dd>Sri Lankan</dd>
-                </dl>
-            </section>
-            <!-- Skills -->
-            <section>
-                <h2>What I Do</h2>
-                <ul>
-                    <li>Build responsive layouts using Flexbox and Grid</li>
-                    <li>Write semantic HTML for accessibility and SEO</li>
-                    <li>Develop maintainable CSS structures</li>
-                    <li>Use JavaScript for interactive UI behavior</li>
-                </ul>
-            </section>
-            <!-- Work -->
-            <section id="my-works">
-                <h2>My Work</h2>
-                <p>
-                    A responsive multi-section webpage demonstrating layout structure, typography, and reusable styling.
-                </p>
-                <a href="projects.html">View Portfolio</a>
-            </section>
-            <!-- Contact -->
-            <section>
-                <h2>Contact</h2>
-                <address>
+            <section id="contact-info">
+                <h2>CONTACT INFO</h2>                
+                <div>
+                    <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                    <h3>Give Me a Call</h3>
+                    <p>
+                        <strong>Mobile:</strong>
+                        <a href="tel:0770343682">0770 343 682</a>                        
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/+94770343682" target="_blank">0770 343 682</a>                       
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    <h3>Let's Connect</h3>
                     <p>
                         <strong>Email:</strong>
                         <a href="mailto:kalpanimadushika399@gmail.com">
@@ -135,14 +118,29 @@
                         </a>
                     </p>
                     <p>
-                        <strong>Phone:</strong>
-                        <a href="tel:0770343682">0770 343 682</a>                        
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/kalpani-madhushika-668898202/" target="_blank">Kalpani Madhushika</a>
                     </p>
                     <p>
-                        <strong>WhatsApp:</strong>
-                        <a href="https://wa.me/+94770343682" target="_blank">0770 343 682</a>                       
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/kalpani-md" target="_blank">kalpani-md</a>
                     </p>
-                </address>
+                </div>
+            </section>
+            <!-- Reach Me Here -->
+            <section id="reach-me">
+                <h2>REACH ME HERE</h2>
+                <div>
+                    <form id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit" value="Send">Send</button>
+                    </form>
+                    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                    <script src="contact.js"></script>
+                </div>
             </section>
         </div>
     </main>

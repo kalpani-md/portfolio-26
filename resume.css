@@ -54,7 +54,7 @@ dt{
     color: #7f7f7f;
 }
 /************Testimonial************/
-#testimonial_container{
+#testimonial-container{
     position: relative;
     margin: auto;
 }
@@ -95,7 +95,7 @@ img{
     background-color: rgba(0,0,0,0.8);
     color: #fff;
 }
-.dot_cotainer{
+.dot-cotainer{
     text-align: center;
 }
 .dot{
