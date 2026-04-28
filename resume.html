@@ -37,14 +37,14 @@
             <nav aria-label="Primary" id="primary-nav" class="surface">
                 <ul>
                     <li>
-                        <a href="index.html" aria-current="page">
+                        <a href="index.html">
                             <i class="fa-solid fa-user" aria-hidden="true"></i>
                             <p>About Me</p>
 					        <small>Who I am</small>
                         </a>
                     </li>
                     <li class="page_active">
-                        <a href="resume.html">
+                        <a href="resume.html" aria-current="page">
                             <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
                             <p>Resume</p>
                             <small>Curriculum Vitae</small>
@@ -84,76 +84,86 @@
             <!-- experiences -->
             <section id="experience">
                 <h2>EXPERIENCES</h2>
-                <div>
+                <article class="entry">
                     <p class="period">Jul 2023-Dec 2025</p>
-                    <p class="title">Trainee IT Assistant - Edira Tutor(Pvt) Ltd.</p>
-                    <p class="description">Developed and maintained Learning Management System (LMS) content, including structured lesson materials, quizzes, and assessments, to support an effective e-learning experience. Managed user accounts and ensured timely distribution of course resources across the platform.</p>
-                </div>
-                <div>
+                    <div class="content">
+                        <p class="title">Trainee IT Assistant - Edira Tutor(Pvt) Ltd.</p>
+                        <p class="description">Developed and maintained Learning Management System (LMS) content, including structured lesson materials, quizzes, and assessments, to support an effective e-learning experience. Managed user accounts and ensured timely distribution of course resources across the platform.</p>
+                    </div>
+                </article>
+                <article class="entry">
                     <p class="period">Apr 2022-Jun 2023</p>
-                    <p class="title">Office Assistant-Peoples Bakers</p>
-                    <p class="description">Supported day-to-day sales operations by maintaining accurate billing records, tracking staff attendance, and preparing vehicle and performance reports. Managed petty cash and advance sheets, contributing to smoother financial workflows and operational efficiency.</p>
-                </div>
+                    <div class="content">                        
+                        <p class="title">Office Assistant-Peoples Bakers</p>
+                        <p class="description">Supported day-to-day sales operations by maintaining accurate billing records, tracking staff attendance, and preparing vehicle and performance reports. Managed petty cash and advance sheets, contributing to smoother financial workflows and operational efficiency.</p>
+                    </div>
+                </article>
             </section>
             <!-- education -->
-            <section>
+            <section id="education">
                 <h2>EDUCATION</h2>
-                <div>
+                <article class="entry">
                     <p class="period">Jun 2025-present</p>
-                    <p>University of Colombo</p>
-                    <p>Bachelor of Information Technology</p>
-                    <p class="description">Currently in the first year, second semester. Coursework spans core areas of IT including programming, database systems, software engineering, web application development, and computer systems - alongside mathematics and communication skills.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Year</th>
-                                <th>Semester</th>
-                                <th>Subjects</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="2">Year 1</td>
-                                <td>Semester 1</td>
-                                <td>
-                                    Information Systems<br>
-                                    Computer Systems<br>
-                                    Free and Open Source Software<br>
-                                    Introduction to Programming<br>
-                                    Fundamentals of Mathematics
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>
-                                    Web Application Development<br>
-                                    Database Systems<br>
-                                    Fundamentals of Software Engineering<br>
-                                    Mathematics for Computing<br>
-                                    Communication Skills
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
+                    <div class="content">
+                        <p class="title">University of Colombo</p>
+                        <p class="title">Bachelor of Information Technology</p>
+                        <p class="description">Currently in the first year, second semester. Coursework spans core areas of IT including programming, database systems, software engineering, web application development, and computer systems - alongside mathematics and communication skills.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Semester</th>
+                                    <th>Subjects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">Year 1</td>
+                                    <td>Semester 1</td>
+                                    <td>
+                                        Information Systems<br>
+                                        Computer Systems<br>
+                                        Free and Open Source Software<br>
+                                        Introduction to Programming<br>
+                                        Fundamentals of Mathematics
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Semester 2</td>
+                                    <td>
+                                        Web Application Development<br>
+                                        Database Systems<br>
+                                        Fundamentals of Software Engineering<br>
+                                        Mathematics for Computing<br>
+                                        Communication Skills
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="entry">
                     <p class="period">Jun 2024-Sep 2025</p>
-                    <p>Aquinas College Higher Studies</p>
-                    <p>Diploma in English Language and Literature</p>
-                    <p class="description">Completed a five-level English programme, enrolling from Level 3 through to the Final Level. Coursework progressively developed skills across grammar, writing, reading and vocabulary, comprehension, composition, and speech. The final level introduced English literature, building analytical reading and critical thinking alongside advanced communication skills.</p>
-                </div>
-                <div>
-                    <p class="period">2010-2018</p>
-                    <p>Taxila Central College</p>
-                    <p class="description">A/L Biology Science Index: 9057250 Results: 1 C, 2 F</p>
-                    <p class="description">O/L - Index: 1064227 Result: 8 A, 1 B</p>
-                </div>
+                    <div class="content">
+                        <p class="title">Aquinas College Higher Studies</p>
+                        <p class="title">Diploma in English Language and Literature</p>
+                        <p class="description">Completed a five-level English programme, enrolling from Level 3 through to the Final Level. Coursework progressively developed skills across grammar, writing, reading and vocabulary, comprehension, composition, and speech. The final level introduced English literature, building analytical reading and critical thinking alongside advanced communication skills.</p>
+                    </div>
+                </article>
+                <article class="entry">
+                    <p class="period">Jan 2010-Aug 2018</p>
+                    <div class="content">
+                        <p class="title">Taxila Central College</p>
+                        <p class="description">A/L Biology Science Index: 9057250 Results: 1 C, 2 F</p>
+                        <p class="description">O/L - Index: 1064227 Result: 8 A, 1 B</p>
+                    </div>
+                </article>                
             </section>
             <!-- skills -->
             <section id="skills">
                 <h2>SKILLS</h2>
-                <div>
-                    <dl class="skills">
+                <article class="skill-entry skills-list">
+                    <dl>
                         <dt>HTML5</dt>
                         <dd>
                             <ul>
@@ -190,8 +200,8 @@
                             </ul>
                         </dd>
                     </dl>
-                </div>
-                <div>                    
+                </article>
+                <article class="skill-entry">                    
                     <h3>Strengths</h3>
                     <ul>
                         <li>Analytical Skills</li>
@@ -200,13 +210,13 @@
                         <li>Critical Thinking</li>
                         <li>Organizing Skills</li>
                     </ul>
-                </div>
-                <div>
+                </article>
+                <article class="skill-entry">
                     <h3>Languages</h3>
                     <li>Sinhala<span>&lpar;Fluent&rpar;</span></li>
                     <li>English<span>&lpar;Advance&rpar;</span></li>
-                </div>
-                <div>
+                </article>
+                <article class="skill-entry">
                     <h3>Hobbies & Interests</h3>
                     <div id="hobby">
                         <div>
@@ -222,18 +232,21 @@
                             <p>music</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
             <!-- Services -->
-            <section>
+            <section id="services">
                 <h2>SERVICES</h2>
-                <div id="services">
-                    <div>
-                        <i class="fa-solid fa-thumbs-up" aria-hidden="true"></i>
-                        <h3>Great Support</h3>
-                        <p>Contineuosly interact with the client to avoid confusion and miscommunication.</p>
-                    </div>
-                </div>    
+                <article class="services-entry">
+                    <i class="fa-solid fa-thumbs-up" aria-hidden="true"></i>
+                    <h3>Great Support</h3>
+                    <p>Contineuosly interact with the client to avoid confusion and miscommunication.</p>
+                </article>
+                <article class="services-entry">
+                    <i class="fa-solid fa-computer" aria-hidden="true"></i>
+                    <h3>Web Design</h3>
+                    <p>Create user friendly websites.</p>
+                </article>    
             </section>
             <!-- Testimonials -->
             <section>
