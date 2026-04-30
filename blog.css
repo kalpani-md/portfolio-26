@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+}
+.article h3, .article p,.article a{
+    color: #7f7f7f;
+}
+.article img{
+    width: 80%;
+    margin: auto;
+}
+.article a, .article + a{
+    display: inline-block;
+    padding: 3%;
+    text-decoration: none;
+    border: 1px solid #7f7f7f;
+    transition: background-color 0.3s ease;
+}
+.article a:hover, .article + a:hover{
+    background-color: #ffd42d;
+    border: 1px solid #ffd42d;    
+}

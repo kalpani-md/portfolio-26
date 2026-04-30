@@ -103,6 +103,7 @@ a{
     left: 0;
 }
 #primary-nav ul li a{ 
+    display: block;
     position: relative;
     z-index: 1;
 }

@@ -152,19 +152,17 @@ img{
 
     }
     .services-entry:nth-child(even){
-        border-right: 1px solid #7f7f7f;;
-        border-bottom: 1px solid #7f7f7f;;
+        border-right: 1px solid #7f7f7f;
+        border-bottom: 1px solid #7f7f7f;
     }
     .services-entry:nth-child(odd){
-        border-left: 1px solid #7f7f7f;;
-        border-bottom: 1px solid #7f7f7f;;
+        border-bottom: 1px solid #7f7f7f;
     }
     .services-entry:nth-last-child(1){
-        border-left: 1px solid #7f7f7f;;
         border-bottom: 1px solid white;
     }
     .services-entry:nth-last-child(2){        
-        border-right: 1px solid #7f7f7f;;
+        border-right: 1px solid #7f7f7f;
         border-bottom: 1px solid white;
     }
 }

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 h2{
     text-align: center;
 }
@@ -30,12 +33,10 @@ button{
     color: #fff;
     font-size: 20px;
     background-color: #525252;
-    border: 1px solid #525252;
     border-radius: 5px;
 }
 button:hover, button:focus{
     background-color: #434242;
-    border: 1px solid #434242;
 }
 @media only screen and (min-width: 768px) {
     #contact-info{
@@ -46,9 +47,4 @@ button:hover, button:focus{
     #contact-info h2{
         grid-column: 1/3;
     }
-    #name, #email{
-        width: 49.5%;
-        margin-left: auto;
-    }
-
 }
